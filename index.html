@@ -6,11 +6,59 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clock App</title>
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 <body>
-
+<div class="background"></div>
+<main class="main">
+    <h1 class="visually-hidden">Clock App</h1>
+    <div class="quote-wrap">
+        <div class="quote">
+            <q class="quote__text"></q>
+            <cite class="quote__author"></cite>
+        </div>
+        <div class="refresh">
+            <img src="assets/img/icon-refresh.svg" alt="Refresh">
+        </div>
+    </div>
+    <div class="widget">
+        <div class="widget__header">
+            <img src="" alt="" class="widget__icon">
+            <p class="widget__title">
+                <span></span>
+                <span>, IT’S CURRENTLY</span>
+            </p>
+        </div>
+        <div class="widget__body">
+            <div class="widget__time">
+                <div class="widget__currentTime"></div>
+                <div class="widget__timezone">
+                    <span class="widget__format"></span>
+                    <span class="widget__utc"></span>
+                </div>
+            </div>
+            <div class="widget__location">
+            </div>
+        </div>
+        <div class="widget__footer">
+            <button type="button" class="btn widget__btn">
+                <span class="widget__text">More</span>
+                <img src="assets/img/icon-arrow-up.svg" alt="arrow" class="widget__arrow">
+            </button>
+        </div>
+    </div>
+</main>
+<div class="details">
+    <ul class="details__menu">
+        <li class="details__item"><span>current timezone</span><span class="details__timezone"></span></li>
+        <li class="details__item"><span>Day of the year</span><span class="details__day-year"></span></li>
+        <li class="details__item"><span>Day of the week</span><span class="details__day-week"></span></li>
+        <li class="details__item"><span>Week number</span><span class="details__week-number"></span></li>
+    </ul>
+</div>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
