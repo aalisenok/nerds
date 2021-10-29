@@ -1,5 +1,5 @@
 const URL_QUOTE = 'https://api.quotable.io/random'
-const URL_WORLDTIMEIP = 'http://worldtimeapi.org/api/ip'
+const URL_WORLDTIMEIP = 'https://worldtimeapi.org/api/ip'
 const URL_FREEGEOIP = 'https://freegeoip.app/json'
 
 const quote = document.querySelector('.quote__text')
@@ -24,7 +24,7 @@ const getQuote = async () => {
             author.textContent = quotes.author
         }
     } catch (e) {
-        console.error(e)
+        console.log(e)
     }
     rotate();
 }
@@ -80,7 +80,7 @@ const getTimeZone = async () => {
         document.querySelector('.details__week-number').textContent = region.week_number
         document.querySelector('.widget__utc').textContent = region.abbreviation
     } catch (e) {
-        console.error(e)
+        console.log(e)
     }
 }
 getTimeZone()
@@ -92,7 +92,7 @@ const getIP = async () => {
         const city = location.region_name
         document.querySelector('.widget__location').textContent = `in ${city}, ${code}`
     } catch (e) {
-        console.error(e)
+        console.log(e)
     }
 }
 getIP()
