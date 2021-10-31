@@ -53,7 +53,7 @@ const getTime = () => {
         greet = 'afternoon'
     } else greet = 'evening'
 
-    if (hours >= 5 && hours <= 8) {
+    if (hours >= 5 && hours <= 17) {
         background.classList.add('day');
         icon.src = './assets/img/icon-sun.svg';
         icon.setAttribute("alt", "Sun icon");
